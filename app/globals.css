@@ -1,0 +1,23 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { @apply border-zinc-200; }
+  html { @apply scroll-smooth; }
+  body { @apply bg-paper text-ink antialiased; font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, sans-serif; }
+  ::selection { @apply bg-black text-white; }
+  :focus-visible { @apply outline-none ring-2 ring-black ring-offset-2 ring-offset-white; }
+}
+
+@layer components {
+  .container-page { @apply mx-auto w-full max-w-6xl px-5 sm:px-8; }
+  .eyebrow { @apply mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-zinc-500; }
+  .page-title { @apply text-4xl font-semibold tracking-tight sm:text-5xl; }
+  .lead { @apply mt-5 max-w-2xl text-base leading-7 text-zinc-600 sm:text-lg; }
+  .button-primary { @apply inline-flex items-center justify-center gap-2 rounded-full bg-black px-5 py-2.5 text-sm font-medium text-white transition hover:bg-zinc-800; }
+  .button-secondary { @apply inline-flex items-center justify-center gap-2 rounded-full border border-zinc-300 bg-white px-5 py-2.5 text-sm font-medium text-black transition hover:border-zinc-500 hover:bg-zinc-50; }
+  .button-disabled { @apply inline-flex cursor-not-allowed items-center justify-center gap-2 rounded-full border border-zinc-200 bg-zinc-100 px-5 py-2.5 text-sm font-medium text-zinc-400; }
+}

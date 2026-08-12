@@ -49,7 +49,7 @@ export const projects: Project[] = [
     tagline: "Nutrition & Wellness",
     type: "팀 프로젝트",
     period: "2024.05 ~ 2024.07",
-    cardRoles: ["회원 인증", "Spring Security", "JPA", "REST API", "건강정보 관리"],
+    cardRoles: ["회원가입", "UI/UX", "실시간 유효성 검사", "GitHub 협업"],
     cardTechStack: ["Java", "Spring Boot", "JPA", "Spring Security", "OAuth2", "Oracle", "Thymeleaf"],
     description: "건강정보 관리와 회원 인증 기능을 구현한 Spring Boot 기반 팀 프로젝트입니다.",
     github: "https://github.com/sangwoodevelopment/nutri-well",
